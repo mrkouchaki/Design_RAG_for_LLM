@@ -1,5 +1,4 @@
-# Design_RAG_for_LLM
-# Retrieval Augmented Generation (RAG) to enhance the capabilities of your LLM for Medical Applications
+# Design Retrieval Augmented Generation (RAG) to enhance the capabilities of your LLM for Medical Applications
 
 This repository provides a straightforward guide to implementing a **Retrieval Augmented Generation (RAG)** system to enhance the capabilities of your LLM using a medical dataset. By leveraging a vector database for efficient retrieval of relevant information and a Large Language Model (LLM) for generating contextual responses, this system ensures accurate and grounded outputs.
 
