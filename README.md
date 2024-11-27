@@ -1,7 +1,8 @@
 # Design_RAG_for_LLM
-# Retrieval Augmented Generation (RAG) for Medical Applications
+# Retrieval Augmented Generation (RAG) to enhance the capabilities of your LLM for Medical Applications
 
-This repository demonstrates how to implement a **Retrieval Augmented Generation (RAG)** system using a medical dataset. The RAG system combines the power of a vector database for retrieving relevant information and a Large Language Model (LLM) for generating contextual responses.
+This repository provides a straightforward guide to implementing a **Retrieval Augmented Generation (RAG)** system to enhance the capabilities of your LLM using a medical dataset. By leveraging a vector database for efficient retrieval of relevant information and a Large Language Model (LLM) for generating contextual responses, this system ensures accurate and grounded outputs.
+
 
 ---
 
@@ -17,7 +18,8 @@ This repository demonstrates how to implement a **Retrieval Augmented Generation
 
 Before running the code, ensure you have the following:
 1. Python 3.8 or higher installed.
-2. The following Python libraries:
+2. Download your own Databse and modify it inside the code
+3. The following Python libraries:
    - `sentence-transformers`
    - `qdrant-client`
    - `transformers`
@@ -27,6 +29,7 @@ Install them using pip:
 ```bash
 pip install sentence-transformers qdrant-client transformers pandas
 
+```
 ## Usage
 
 ### Step 1: Prepare Your Medical Dataset
@@ -49,7 +52,7 @@ Execute rag_medical.py file.
 
 ```bash
 python rag_medical.py
-
+```
 ## How It Works
 
 1. **Embed the Dataset**: Use `SentenceTransformers` to generate vector embeddings of the medical dataset (`content`).
