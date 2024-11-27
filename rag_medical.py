@@ -48,8 +48,8 @@ def medical_rag_loop(query, vector_db, llm):
     response = llm(f"{retrieved_context}\n\nAnswer the query: {query}")
     return response
 
-# Step 6: Load a Local LLM for Medical Q&A
-llm_model = pipeline("text-generation", model="gpt2", tokenizer="gpt2")  # Replace with a medical-specific LLM
+# Step 6: Load a Local LLM for Medical Q&A or use API to use any desired LLM model. Here I simply used gpt2
+llm_model = pipeline("text-generation", model="gpt2", tokenizer="gpt2")
 
 # Example Query
 query = "What are the symptoms of diabetes?"
